@@ -38,7 +38,7 @@ Escaneo rápido de todos los puertos:
 ```bash
 nmap -p- -sS --min-rate 5000 192.168.1.78 -Pn -n -vvv
 ```
-![1.png](Images/1.png)
+![1.2.png](Images/1.2.png)
 
 Escaneo con scripts en puertos detectados (21,22,80):
 
