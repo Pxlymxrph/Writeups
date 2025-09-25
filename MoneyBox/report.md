@@ -1,11 +1,11 @@
 ---
-title: "MoneyBox — Walkthrough"
-author: "Pxlymxrph"
-level: "Easy"
-target: "VulnHub - MoneyBox"
+Title: "MoneyBox — Walkthrough"
+Author: "Pxlymxrph"
+Level: "Easy"
+Target: "VulnHub - MoneyBox"
 url: "https://www.vulnhub.com/entry/moneybox-1,653/"
-date: 2025-09-23
-tags: [ctf, vulnhub, linux, ssh, privesc, steganography, enum]
+Date: 2025-09-23
+Tags: [ctf, vulnhub, linux, ssh, privesc, steganography, enum]
 ---
 
 # MoneyBox — Walkthrough
@@ -20,29 +20,6 @@ tags: [ctf, vulnhub, linux, ssh, privesc, steganography, enum]
 - Fuerza bruta controlada con `hydra` sobre SSH → acceso `renu`.  
 - Encontré `.ssh/id_rsa` → `lily`. `sudo -l` muestra `/usr/bin/python3 /opt/backup.py` NOPASSWD → uso de GTFObins/Perl para shell root.  
 - Flags: user, lily, root.
-
-## Evidencias
-Imágenes en `Images/`:
-![20.png](Images/20.png)
-![21.png](Images/21.png)
-![1.png](Images/1.png)
-![1.2.png](Images/1.2.png)
-![2.png](Images/2.png)
-![3.png](Images/3.png)
-![4.png](Images/4.png)
-![5.png](Images/5.png)
-![6.png](Images/6.png)
-![7.png](Images/7.png)
-![9.1.png](Images/9.1.png)
-![10.png](Images/10.png)
-![11.png](Images/11.png)
-![12.png](Images/12.png)
-![22.png](Images/22.png)
-![13.png](Images/13.png)
-![15.png](Images/15.png)
-![17.png](Images/17.png)
-![16.png](Images/16.png)
-![18.png](Images/18.png)
 
 ## 1) Descubrimiento de red
 Detecté la máquina objetivo en la red local con:
