@@ -106,8 +106,6 @@ steghide extract -sf trytofind.jpg
 
 ![9.1.png](Images/9.1.png)
 
-![9.png](Images/9.png)
-
 ## 8) Fuerza bruta SSH (laboratorio)
 Intento controlar SSH con `hydra` (en laboratorio):
 
