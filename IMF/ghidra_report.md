@@ -7,7 +7,7 @@ Este repositorio contiene la documentación del proceso para identificar el **Ag
 ---
 ## Código del programa (contexto)
 
-![main_bin2.png](Images/main_bin2.png)           ![main_bin2.2.png](Images/main_bin2.2.png)
+![main_bin2.png](Images/main_bin2.png)                                      ![main_bin2.2.png](Images/main_bin2.2.png)
 
 ---
 
