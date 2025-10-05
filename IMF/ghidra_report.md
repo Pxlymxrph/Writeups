@@ -6,6 +6,12 @@ Este repositorio contiene la documentación del proceso para identificar el **Ag
 
 ---
 
+![main_bin2.png](Images/main_bin2.png)
+
+![main_bin2.2.png](Images/main_bin2.2.png)
+
+---
+
 ## Resumen del flujo observado (paso a paso)
 
 1. `asprintf(&local_28, "%i", 0x2DDD984);`  
