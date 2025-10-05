@@ -5,10 +5,9 @@ Este repositorio contiene la documentación del proceso para identificar el **Ag
 > **Resultado clave:** La constante hexadecimal encontrada en el binario (`0x2DDD984`) se convierte a decimal y esa cadena decimal (8 dígitos) es el **Agent ID** esperado: **48093572**.
 
 ---
+## Código del programa (contexto)
 
-![main_bin2.png](Images/main_bin2.png)
-
-![main_bin2.2.png](Images/main_bin2.2.png)
+![main_bin2.png](Images/main_bin2.png)           ![main_bin2.2.png](Images/main_bin2.2.png)
 
 ---
 
